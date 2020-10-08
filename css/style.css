@@ -1,64 +1,140 @@
-*{
+* {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
 }
-/* header start  */
 
-.just-around{
-    justify-content: start;
+.just-around {
+    justify-content: space-around;
 }
-.just-between{
+
+.just-between {
     justify-content: space-between;
 }
-.align-center{
+
+.align-center {
     align-items: center;
-    
 }
 
-.header .menu ul li{
-    list-style: none;
-    padding: 20px;
-}
-.header .nav-right i{
-    margin-left: 10px;
-    
-}
-/* header end  */
-/* gour start  */
-/* gour end  */
-/* menu start  */
-.img-fluid{
+.img-fluid {
     width: 100%;
 }
-.container{
+
+.container {
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
 }
-.row{
+
+.row {
     display: flex;
     /* justify-content: space-evenly; */
 }
-.menu .menu-item{
+
+
+/* header start  */
+
+.header .menu ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.header .nav-right i {
+    margin-left: 10px;
+}
+
+.header {
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/* header end  */
+
+
+/* gour start  */
+
+.gour {
+    background: url('../img/bg.jpg') repeat-x center top;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.gour .gour-img {
+    height: 400px;
+    width: 110px;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-53%);
+    top: -170px;
+}
+
+.gour .gour-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.gour .gour-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gour .gour-text h2 span {
+    margin-left: 20px;
+}
+
+.gour .gour-text h2 {
+    font-size: 5.5em;
+    color: goldenrod;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.gour .bg {
+    background: url(../img/BG3.png) repeat-x center top;
+    background-size: auto;
+    background-attachment: scroll;
+    padding-top: 155px;
+    padding-bottom: 0.05px;
+}
+
+
+/* gour end  */
+
+
+/* menu start  */
+
+.menu .menu-item {
     width: 33.33%;
 }
-.menu .menu-item:nth-child(2){
+
+.menu .menu-item:nth-child(2) {
     padding: 0px 185px;
-    
 }
-.menu .menu-item h2{
+
+.menu .menu-item h2 {
     margin: 20px 0;
     color: goldenrod;
 }
-.menu .menu-item .menu-content span{
+
+.menu .menu-item .menu-content span {
     color: goldenrod;
 }
-.menu .menu-item .menu-content{
+
+.menu .menu-item .menu-content {
     margin: 15px 0;
 }
 
-.menu .menu-item .menu-content .menu-head{
+.menu .menu-item .menu-content .menu-head {
     border-bottom: 1px solid goldenrod;
-
 }
